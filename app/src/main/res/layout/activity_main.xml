@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black_p"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:gravity="left"
+        android:layout_gravity="bottom"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:background="@color/pink"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="29dp"
+            android:text="SCARLET WITCH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"/>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/scarlet"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="left"
+                android:src="@drawable/scarlet2"
+                android:layout_width="200dp"
+                android:layout_height="280dp"/>
+            <TextView
+                android:layout_toRightOf="@+id/scarlet"
+                android:id="@+id/scarlett"
+                android:textColorHint="@color/white"
+                android:textSize="15dp"
+                android:padding="10dp"
+                android:hint="Scarlet Witch adalah sebuah karakter pahlawan super fiksi yang muncul dalam buku terbitan Marvel Comics. Karakter ini pertama kali muncul X-Men #4 dan dibuat oleh Stan Lee dan Jack Kirby. Dia adalah anak perempuan dari Magneto, saudara kembar dari Quicksilver, dan saudara tiri paternal dari Polaris."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"/>
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:id="@+id/scarlet22"
+                android:layout_toRightOf="@+id/scarlet"
+                android:layout_below="@+id/scarlet"
+                android:layout_width="200dp"
+                android:layout_height="275dp"
+                android:src="@drawable/scarlet" />
+            <TextView
+                android:layout_marginTop="25dp"
+                android:textSize="18dp"
+                android:textColorHint="@color/white"
+                android:layout_below="@+id/scarlet"
+                android:layout_toLeftOf="@+id/scarlet22"
+                android:id="@+id/scarlett22"
+                android:hint="Wanda Maximoff is a character portrayed by Elizabeth Olsen in the Marvel Cinematic Universe (MCU) media franchise who is based on the Marvel Comics character of the same name, more commonly known as the Scarlet Witch. As of 2021, Wanda has frequently appeared in MCU films."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
